@@ -142,26 +142,26 @@
     }
 
     .bookImages{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding: 18px;
+}
 
-    .bookImg{
-      flex: 1;
-      width: 100%;
-      overflow: hidden;
-      border-bottom: 1px solid var(--line);
-      background: #000;
-    }
-    .bookImg:last-child{ border-bottom: 0; }
-
-    .bookImg img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+.bookImg{
+  flex: 1;
+  overflow: visible;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+.bookImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
     /* --------------------------------------------------------------------------- */
 
     /* -------------------- NEW: TEXT PAGE -------------------- */
@@ -252,20 +252,23 @@
     </section>
 
     <!-- 2) BOOK PAGE -->
-    <section class="page page--book" id="book">
-      <div class="bookWrap">
-        <div class="bookTitle">βιβλίο σε προετοιμασία</div>
+<section class="page page--book" id="book">
+  <div class="bookWrap">
+    <div class="bookTitle">Πατήστε στην εικόνα για να δείτε το βιβλίο</div>
 
-        <div class="bookImages">
-          <div class="bookImg">
-            <img loading="lazy" alt="Βιβλίο (εικόνα 1)" src="https://renadownloads.s3.us-east-1.amazonaws.com/book1.jpeg">
-          </div>
-          <div class="bookImg">
-            <img loading="lazy" alt="Βιβλίο (εικόνα 2)" src="https://renadownloads.s3.us-east-1.amazonaws.com/book2.jpeg">
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="bookImages">
+
+      <a class="bookImg" href="https://drive.google.com/file/d/1nJuQ5pZpC9qkvVEBlq78VJoHzxJUVC_F/view?usp=drive_link" target="_blank" rel="noopener">
+        <img loading="lazy" alt="Το Ηλιακό Σύστημα για παιδιά" src="https://renadownloads.s3.us-east-1.amazonaws.com/solarsystemforkids.jpg">
+      </a>
+
+      <a class="bookImg" href="https://drive.google.com/file/d/1sahUGL2hgeqYPN8o1E6kxNzWCkz5NAco/view?usp=drive_link" target="_blank" rel="noopener">
+        <img loading="lazy" alt="Κοσμολογία για παιδιά" src="https://renadownloads.s3.us-east-1.amazonaws.com/cosmologyforkids.jpg">
+      </a>
+
+    </div>
+  </div>
+</section>
 
     <!-- 3) SOCIAL -->
     <section class="page" id="socials">
