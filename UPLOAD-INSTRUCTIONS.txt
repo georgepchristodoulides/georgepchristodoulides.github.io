@@ -1,0 +1,12 @@
+ΓΡΗΓΟΡΗ ΕΓΚΑΤΑΣΤΑΣΗ ΣΤΟ GITHUB PAGES
+
+1. Ανοίξτε το repository georgepchristodoulides.github.io.
+2. Διαγράψτε το παλιό index.html μόνο αφού έχετε κρατήσει αντίγραφό του.
+3. Ανεβάστε ΟΛΑ τα αρχεία και τους φακέλους αυτού του πακέτου στη ρίζα του repository.
+4. Περιμένετε 1-3 λεπτά και ανοίξτε https://georgepchristodoulides.github.io/
+5. Στο Google Search Console προσθέστε URL-prefix property: https://georgepchristodoulides.github.io/
+6. Επιβεβαιώστε την ιδιοκτησία με το HTML file που θα σας δώσει η Google: ανεβάστε το αρχείο χωρίς καμία αλλαγή στη ρίζα του repository.
+7. Υποβάλετε το sitemap: https://georgepchristodoulides.github.io/sitemap.xml
+8. Χρησιμοποιήστε URL Inspection και Request indexing για την αρχική σελίδα και τις έξι σελίδες βιβλίων.
+
+Σημαντικό: Μην αλλάξετε τα ονόματα των φακέλων books ή covers.
