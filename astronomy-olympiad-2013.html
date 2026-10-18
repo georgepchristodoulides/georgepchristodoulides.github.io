@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ολυμπιάδα Αστρονομίας Κύπρου 2013 — Ερωτήσεις του Γιώργου Χριστοδουλίδη</title>
+  <meta name="description" content="50 ερωτήσεις που συνέταξε ο Γιώργος Χριστοδουλίδης για την πρώτη Ολυμπιάδα Αστρονομίας και Αστροφυσικής στην Κύπρο το 2013, με ενδεικτικές απαντήσεις.">
+  <meta name="author" content="Γιώργος Χριστοδουλίδης">
+  <link rel="canonical" href="https://georgepchristodoulides.github.io/astronomy-olympiad-2013.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:title" content="Κύπρος 2013: 50 ερωτήσεις Αστρονομίας και Αστροφυσικής">
+  <meta property="og:description" content="Ερωτήσεις του Γιώργου Χριστοδουλίδη για την πρώτη Ολυμπιάδα Αστρονομίας και Αστροφυσικής στην Κύπρο, με ενδεικτικές απαντήσεις.">
+  <meta property="og:url" content="https://georgepchristodoulides.github.io/astronomy-olympiad-2013.html">
+  <style>
+:root {
+  --ink: #0b1f35;
+  --muted: #536477;
+  --blue: #0c5bd3;
+  --blue-dark: #074293;
+  --sky: #eaf3ff;
+  --paper: #fbfdff;
+  --white: #ffffff;
+  --line: #d8e2ee;
+  --warm: #f7f2e8;
+  --max: 1180px;
+  --shadow: 0 24px 60px rgba(26, 56, 94, 0.12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+.shell { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(216, 226, 238, 0.82);
+  background: rgba(251, 253, 255, 0.94);
+  backdrop-filter: blur(16px);
+}
+.header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  background: var(--ink);
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+.brand strong, .brand small { display: block; }
+.brand strong { font-size: 0.95rem; line-height: 1.2; }
+.brand small { margin-top: 3px; color: var(--muted); font-size: 0.7rem; letter-spacing: 0.03em; }
+nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 34px); font-size: 0.9rem; font-weight: 650; }
+nav a { padding: 9px 0; border-bottom: 2px solid transparent; }
+nav a:hover { color: var(--blue); border-color: var(--blue); }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(72px, 9vw, 126px) 0 clamp(82px, 10vw, 140px);
+  background:
+    radial-gradient(circle at 82% 20%, rgba(140, 191, 255, 0.33), transparent 27%),
+    linear-gradient(180deg, #f7fbff 0%, #edf5ff 100%);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  left: -280px;
+  bottom: -290px;
+  border: 1px solid rgba(12, 91, 211, 0.22);
+  border-radius: 50%;
+}
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(390px, 0.92fr); gap: clamp(50px, 8vw, 112px); align-items: center; }
+.eyebrow { margin: 0 0 16px; color: var(--blue); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+h1, h2, h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.08; letter-spacing: -0.025em; }
+h1 { max-width: 760px; font-size: clamp(3rem, 6.1vw, 5.65rem); font-weight: 500; }
+h2 { font-size: clamp(2.15rem, 4vw, 3.75rem); font-weight: 500; }
+h3 { font-size: 1.55rem; }
+.hero-lede { max-width: 720px; margin: 26px 0 0; color: #354b64; font-size: clamp(1.08rem, 1.6vw, 1.27rem); line-height: 1.75; }
+.hero-lede strong { color: var(--ink); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 21px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.93rem;
+  font-weight: 750;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--blue); color: var(--white); }
+.button-primary:hover { background: var(--blue-dark); }
+.button-secondary { border-color: #bdccdc; background: rgba(255, 255, 255, 0.75); color: var(--ink); }
+.button-secondary:hover { border-color: var(--blue); color: var(--blue); }
+.hero-facts { display: flex; flex-wrap: wrap; gap: 28px; margin: 44px 0 0; }
+.hero-facts div { min-width: 105px; padding-left: 14px; border-left: 2px solid #aac8ec; }
+.hero-facts dt { font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; line-height: 1; }
+.hero-facts dd { margin: 7px 0 0; color: var(--muted); font-size: 0.78rem; }
+
+.cover-composition { position: relative; min-height: 560px; isolation: isolate; }
+.hero-cover {
+  position: absolute;
+  display: block;
+  width: 46%;
+  overflow: hidden;
+  border: 7px solid var(--white);
+  border-radius: 5px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transition: transform 220ms ease;
+}
+.hero-cover:hover { z-index: 8; transform: rotate(0deg) translateY(-8px); }
+.hero-cover img { width: 100%; aspect-ratio: 0.72; object-fit: cover; }
+.hero-cover-1 { left: 3%; top: 12%; z-index: 3; transform: rotate(-6deg); }
+.hero-cover-2 { right: 2%; top: 3%; z-index: 2; transform: rotate(6deg); }
+.hero-cover-3 { left: 30%; bottom: 0; z-index: 4; transform: rotate(1deg); }
+.orbit { position: absolute; border: 1px solid rgba(12, 91, 211, 0.28); border-radius: 50%; z-index: -1; }
+.orbit-one { width: 430px; height: 430px; right: -70px; top: 68px; }
+.orbit-two { width: 310px; height: 310px; left: -20px; bottom: 20px; }
+
+.section { padding: clamp(80px, 10vw, 138px) 0; }
+.section-heading { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr); align-items: end; gap: 60px; margin-bottom: 50px; }
+.section-heading > p { max-width: 520px; margin: 0; color: var(--muted); font-size: 1.04rem; }
+.books-section { background: var(--white); }
+.books-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+.book-card { min-width: 0; display: grid; grid-template-columns: 43% 57%; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+.cover-link { position: relative; min-height: 440px; overflow: hidden; background: #d9e5f3; }
+.cover-link img { width: 100%; height: 100%; object-fit: cover; transition: transform 280ms ease; }
+.cover-link:hover img { transform: scale(1.025); }
+.book-card-body { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(24px, 3.4vw, 38px); }
+.book-card-body .eyebrow { margin-bottom: 11px; font-size: 0.65rem; }
+.book-card-body h3 a:hover { color: var(--blue); }
+.book-card-body > p:not(.eyebrow) { margin: 18px 0 26px; color: var(--muted); font-size: 0.92rem; line-height: 1.72; }
+.card-actions { width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-top: auto; }
+.card-actions .button { min-height: 42px; padding: 9px 15px; font-size: 0.82rem; }
+.text-link { color: var(--blue); font-size: 0.86rem; font-weight: 760; text-decoration: underline; text-decoration-color: rgba(12, 91, 211, 0.28); text-underline-offset: 5px; }
+.text-link:hover { color: var(--blue-dark); text-decoration-color: currentColor; }
+
+.author-section { background: var(--ink); color: var(--white); }
+.author-grid { display: grid; grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr); gap: clamp(50px, 9vw, 130px); align-items: center; }
+.author-kicker { position: relative; min-height: 420px; display: grid; place-items: center; border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 50%; }
+.author-kicker::before, .author-kicker::after { content: ""; position: absolute; border: 1px solid rgba(113, 176, 255, 0.34); border-radius: 50%; }
+.author-kicker::before { inset: 34px; }
+.author-kicker::after { inset: 92px; }
+.author-kicker span { position: absolute; font-family: Georgia, "Times New Roman", serif; font-size: clamp(5rem, 11vw, 9rem); line-height: 1; }
+.author-kicker span:first-child { transform: translate(-31%, -10%); color: #dcecff; }
+.author-kicker span:last-child { transform: translate(31%, 10%); color: #6bacff; }
+.author-copy .eyebrow { color: #7eb7ff; }
+.author-copy h2 { color: var(--white); }
+.author-copy > p { max-width: 720px; color: #c1ccda; }
+.author-copy .large-copy { margin: 28px 0 20px; color: var(--white); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.5; }
+.prominent-link { display: inline-block; margin-top: 17px; color: #88bdff; font-size: 0.97rem; }
+
+.projects-section { background: var(--warm); }
+.compact-heading { grid-template-columns: 1fr; }
+.projects-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.project-card { position: relative; min-height: 285px; padding: 27px; border: 1px solid #ddd4c3; border-radius: 14px; background: rgba(255, 255, 255, 0.62); transition: transform 160ms ease, border-color 160ms ease, background 160ms ease; }
+.project-card:hover { transform: translateY(-4px); border-color: var(--blue); background: var(--white); }
+.project-number { display: block; margin-bottom: 54px; color: #7d7362; font-size: 0.72rem; letter-spacing: 0.15em; }
+.project-card h3 { font-size: 1.33rem; }
+.project-card p { color: #665f52; font-size: 0.88rem; }
+.project-arrow { position: absolute; right: 24px; bottom: 20px; color: var(--blue); font-size: 1.25rem; }
+
+.site-footer { padding: 70px 0 24px; background: #071525; color: var(--white); }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding-bottom: 50px; }
+.footer-title { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; }
+.footer-grid p:not(.footer-title):not(.footer-label) { max-width: 510px; color: #9fb0c3; }
+.footer-label { margin: 0 0 17px; color: #8194aa; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+.social-links { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+.social-links a { color: #dce8f6; font-size: 0.9rem; text-decoration: underline; text-decoration-color: #3a526e; text-underline-offset: 5px; }
+.social-links a:hover { color: #7eb7ff; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid #23364c; color: #71859b; font-size: 0.75rem; }
+
+.detail-hero { padding: 34px 0 clamp(80px, 9vw, 126px); background: linear-gradient(180deg, #f7fbff 0%, #eaf3ff 100%); }
+.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 44px; color: #6b7b8d; font-size: 0.78rem; font-weight: 650; }
+.breadcrumb a:hover { color: var(--blue); }
+.detail-grid { display: grid; grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr); gap: clamp(50px, 8vw, 110px); align-items: center; }
+.detail-cover { max-width: 460px; justify-self: center; overflow: hidden; border: 8px solid var(--white); border-radius: 6px; background: var(--white); box-shadow: var(--shadow); transform: rotate(-1.5deg); }
+.detail-cover img { width: 100%; aspect-ratio: 0.76; object-fit: cover; }
+.detail-copy h1 { max-width: 760px; font-size: clamp(3rem, 6vw, 5.6rem); }
+.byline { margin: 18px 0 0; color: #617186; font-size: 1rem; }
+.byline a { color: var(--blue); font-weight: 750; }
+.detail-description { max-width: 770px; margin: 30px 0 0; color: #334b65; font-size: clamp(1.03rem, 1.55vw, 1.22rem); line-height: 1.8; }
+.book-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 40px 0 0; border-top: 1px solid #bfcede; border-left: 1px solid #bfcede; }
+.book-facts div { padding: 15px 17px; border-right: 1px solid #bfcede; border-bottom: 1px solid #bfcede; }
+.book-facts dt { color: #708095; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+.book-facts dd { margin: 5px 0 0; color: var(--ink); font-size: 0.86rem; font-weight: 650; }
+.topics-section { background: var(--white); }
+.topics-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr); gap: clamp(50px, 9vw, 130px); }
+.topic-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.topic-list li { display: grid; grid-template-columns: 62px 1fr; gap: 16px; align-items: center; min-height: 88px; border-bottom: 1px solid var(--line); }
+.topic-list span { color: var(--blue); font-size: 0.72rem; letter-spacing: 0.12em; }
+.topic-list strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.18rem; font-weight: 500; }
+.series-section { background: #f2f7fc; }
+.related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.related-grid .book-card { grid-template-columns: 1fr; }
+.related-grid .cover-link { min-height: auto; aspect-ratio: 0.76; }
+.related-grid .book-card-body { min-height: 375px; }
+
+.article-page { background: var(--white); }
+.article-header { padding: 34px 0 clamp(70px, 9vw, 120px); background: linear-gradient(140deg, #eff6ff 0%, #fbfdff 58%, #f8f1e5 100%); }
+.article-header-inner { max-width: 1000px; }
+.article-header h1 { max-width: 900px; font-size: clamp(3rem, 7vw, 6.3rem); }
+.article-deck { max-width: 810px; margin: 30px 0 0; color: #40566f; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.25rem, 2.2vw, 1.7rem); line-height: 1.58; }
+.article-meta { margin: 30px 0 0; color: #69798b; font-size: 0.82rem; font-weight: 700; }
+.article-layout { display: grid; grid-template-columns: 210px minmax(0, 720px); justify-content: center; gap: clamp(45px, 8vw, 110px); padding-top: clamp(70px, 9vw, 120px); padding-bottom: clamp(90px, 11vw, 150px); }
+.article-aside { position: sticky; top: 120px; align-self: start; padding-top: 16px; border-top: 2px solid var(--blue); }
+.article-aside span { color: var(--blue); font-size: 0.72rem; letter-spacing: 0.15em; }
+.article-aside p { color: #68788a; font-size: 0.86rem; }
+.article-body { min-width: 0; }
+.article-body h2 { margin: 68px 0 22px; font-size: clamp(2rem, 3.7vw, 3rem); }
+.article-body h2:first-child { margin-top: 0; }
+.article-body p { margin: 0 0 24px; color: #30465e; font-size: 1.08rem; line-height: 1.9; }
+.article-body blockquote { margin: 60px 0; padding: 34px 0 34px 32px; border-left: 4px solid var(--blue); color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.55rem, 3vw, 2.25rem); line-height: 1.48; }
+.article-cta { margin-top: 72px; padding: 38px; border-radius: 16px; background: var(--sky); }
+.article-cta h2 { margin: 0 0 16px; }
+.article-cta p:not(.eyebrow) { font-size: 0.98rem; }
+.article-cta .button { margin-top: 10px; }
+
+:focus-visible { outline: 3px solid #f2a900; outline-offset: 4px; }
+
+@media (max-width: 1040px) {
+  .hero-grid { grid-template-columns: 1fr 0.8fr; gap: 45px; }
+  .cover-composition { min-height: 470px; }
+  .books-grid { grid-template-columns: 1fr; }
+  .book-card { grid-template-columns: 35% 65%; }
+  .cover-link { min-height: 420px; }
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 780px) {
+  .shell { width: min(calc(100% - 28px), var(--max)); }
+  .header-inner { min-height: 70px; }
+  .brand small, nav a:not(:first-child) { display: none; }
+  nav { margin-left: auto; }
+  nav a:first-child { display: inline-flex; min-height: 40px; align-items: center; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; }
+  .hero { padding-top: 58px; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .cover-composition { width: min(100%, 510px); min-height: 510px; margin: 10px auto 0; }
+  .section-heading { grid-template-columns: 1fr; gap: 22px; }
+  .book-card { grid-template-columns: 42% 58%; }
+  .author-grid { grid-template-columns: 1fr; }
+  .author-kicker { min-height: 340px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-cover { width: min(78%, 420px); }
+  .topics-grid { grid-template-columns: 1fr; }
+  .related-grid { grid-template-columns: 1fr; }
+  .related-grid .book-card { grid-template-columns: 36% 64%; }
+  .related-grid .cover-link { min-height: 390px; aspect-ratio: auto; }
+  .related-grid .book-card-body { min-height: 0; }
+  .article-layout { grid-template-columns: 1fr; }
+  .article-aside { display: none; }
+}
+
+@media (max-width: 560px) {
+  h1 { font-size: clamp(2.7rem, 13vw, 4rem); }
+  .hero-actions .button { flex: 1 1 150px; }
+  .hero-facts { gap: 18px; }
+  .hero-facts div { min-width: 88px; }
+  .cover-composition { min-height: 430px; }
+  .hero-cover { width: 48%; border-width: 5px; }
+  .book-card { grid-template-columns: 1fr; }
+  .cover-link { min-height: auto; aspect-ratio: 0.74; }
+  .book-card-body { padding: 25px 22px 29px; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card { min-height: 235px; }
+  .project-number { margin-bottom: 35px; }
+  .footer-bottom { flex-direction: column; }
+  .detail-cover { width: min(92%, 420px); }
+  .book-facts { grid-template-columns: 1fr; }
+  .related-grid .book-card { grid-template-columns: 1fr; }
+  .related-grid .cover-link { min-height: auto; aspect-ratio: 0.76; }
+  .article-cta { padding: 27px 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+
+    .exam-header{padding:36px 0 64px;background:linear-gradient(130deg,#eff6ff,#fbfdff 80%);border-bottom:1px solid var(--line)}
+    .reading-shell{width:min(calc(100% - 40px),920px);margin:0 auto}
+    .exam-header h1{max-width:900px;font-size:clamp(2.25rem,5vw,4.25rem);line-height:1.14;overflow-wrap:anywhere}
+    .exam-header .breadcrumb{margin-bottom:32px}
+    .exam-credit{max-width:850px;margin:26px 0 0;color:#30465e;font-size:clamp(1.05rem,2vw,1.23rem);line-height:1.85}
+    .exam-note{margin:20px 0 0;padding-left:18px;border-left:3px solid #9abce9;color:#536477;font-size:.92rem;line-height:1.8}
+    .education-quote{margin:28px 0 0;padding:22px 25px;background:#fff;border:1px solid #d8e2ee;border-radius:12px;font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;line-height:1.7}
+    .education-quote p{margin:0}.education-quote cite{display:block;margin-top:10px;color:#536477;font-family:system-ui,sans-serif;font-size:.82rem;font-style:normal}
+    .question-section{padding:50px 0 70px}
+    .question-section h2{font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.3}
+    .question-tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .question-tools[hidden]{display:none}
+    button.button{font-family:inherit;cursor:pointer;font-size:.85rem}
+    .question-help{margin:18px 0 24px;color:#536477;font-size:.87rem}
+    .questions-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:16px}
+    .question-card{border:1px solid #d8e2ee;border-radius:12px;overflow:hidden;background:#fff;scroll-margin-top:110px}
+    .question-card summary{position:relative;display:flex;gap:16px;align-items:baseline;list-style:none;padding:22px 52px 22px 22px;cursor:pointer}
+    .question-card summary::-webkit-details-marker{display:none}
+    .question-card summary::after{position:absolute;right:22px;top:22px;content:'+';color:#0c5bd3;font-size:1.3rem;font-weight:600;line-height:1.4}
+    .question-card[open] summary::after{content:'−'}
+    .question-card summary:hover{background:#f5f9ff}
+    .question-number{flex:0 0 2.1em;color:#0c5bd3;font-weight:800;font-variant-numeric:tabular-nums}
+    .question-title{min-width:0;font-weight:700;font-size:1rem;line-height:1.7;overflow-wrap:anywhere}
+    .question-answer{margin:0 22px 24px 4.55rem;padding:17px 20px;border-radius:8px;background:#eef5ff;color:#28425f;font-size:.98rem;line-height:1.85;overflow-wrap:anywhere}
+    .question-answer p{margin:0}.question-answer strong{color:#074293}
+    .return-link{margin-top:34px}
+    .exam-footer{padding:30px 0;background:#071525;color:#dce8f6;font-size:.9rem}
+    .exam-footer a{text-decoration:underline;text-underline-offset:4px}
+    @media(max-width:600px){.exam-header{padding-bottom:40px}.header-inner{min-height:76px;gap:14px}.header-inner nav{display:none}.question-card summary{padding:18px 40px 18px 16px;gap:10px}.question-card summary::after{right:14px;top:18px}.question-answer{margin:0 14px 18px;padding:15px}.question-number{flex-basis:1.8em}.education-quote{padding:18px}.question-tools .button{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+    @media print{.site-header,.breadcrumb,.question-tools,.question-help,.return-link,.exam-footer{display:none!important}.exam-header{padding:0 0 20px;background:white}.reading-shell{width:100%;max-width:none}.question-section{padding-top:24px}.exam-header h1{font-size:25pt}.question-card{break-inside:avoid;box-shadow:none}.question-card summary{padding:12px 16px}.question-card summary::after{display:none}.question-answer{margin:0 16px 16px 4.55rem;background:#f3f3f3}.question-answer{print-color-adjust:exact}.question-section h2{font-size:18pt}}
+
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Αρχική σελίδα Γιώργου Χριστοδουλίδη">
+      <span class="brand-mark" aria-hidden="true">ΓΧ</span>
+      <span><strong>Γιώργος Χριστοδουλίδης</strong><small>Φυσική · Αστρονομία · Εκπαίδευση</small></span>
+    </a>
+    <nav aria-label="Κύρια πλοήγηση"><a href="index.html#books">Βιβλία</a><a href="index.html#author">Συγγραφέας</a></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="exam-header" aria-labelledby="page-title">
+    <div class="reading-shell">
+      <nav class="breadcrumb" aria-label="Διαδρομή"><a href="index.html">Αρχική</a><span aria-hidden="true">/</span><span aria-current="page">Ολυμπιάδα 2013</span></nav>
+      <p class="eyebrow">1η Ολυμπιάδα · Κύπρος, 2013</p>
+      <h1 id="page-title">Αστρονομία και Αστροφυσική: 50 ερωτήσεις και απαντήσεις</h1>
+      <p class="exam-credit">Ερωτήσεις που συνέταξε ο Γιώργος Χριστοδουλίδης για το εξεταστικό δοκίμιο της πρώτης Ολυμπιάδας Αστρονομίας και Αστροφυσικής στην Κύπρο, το 2013.</p>
+      <p class="exam-note">Οι ερωτήσεις παρουσιάζονται εδώ με επικαιροποιημένη διατύπωση και ενδεικτικές απαντήσεις.</p>
+      <blockquote class="education-quote"><p>«Πολλά από αυτά τα θέματα θα έπρεπε να διδάσκονται στο Γυμνάσιο και στην κατεύθυνση θετικών επιστημών του Λυκείου.»</p><cite>Γιώργος Χριστοδουλίδης</cite></blockquote>
+    </div>
+  </section>
+  <section class="question-section" aria-labelledby="questions-title">
+    <div class="reading-shell">
+      <h2 id="questions-title">Οι ερωτήσεις και οι απαντήσεις</h2>
+      <p class="question-help">Πατήστε σε μια ερώτηση για να κρύψετε ή να εμφανίσετε την απάντησή της.</p>
+      <div class="question-tools" id="answer-controls" hidden>
+        <button class="button button-secondary" type="button" id="hide-answers" aria-controls="questions">Απόκρυψη όλων των απαντήσεων</button>
+        <button class="button button-secondary" type="button" id="show-answers" aria-controls="questions">Εμφάνιση όλων των απαντήσεων</button>
+      </div>
+      <ol class="questions-list" id="questions">
+        <li>
+          <details class="question-card" id="question-1" open>
+            <summary><span class="question-number">1.</span><span class="question-title">Το Σύμπαν παραμένει στατικό, διαστέλλεται ή συρρικνώνεται;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Το Σύμπαν διαστέλλεται και, σύμφωνα με τις παρατηρήσεις, η διαστολή του επιταχύνεται.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-2" open>
+            <summary><span class="question-number">2.</span><span class="question-title">Πόση είναι η εκτιμώμενη ηλικία του Σύμπαντος;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου 13,8 δισεκατομμύρια χρόνια.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-3" open>
+            <summary><span class="question-number">3.</span><span class="question-title">Μπορούμε να παρατηρήσουμε ολόκληρο το Σύμπαν; Γιατί;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Όχι. Παρατηρούμε μόνο το παρατηρήσιμο Σύμπαν, επειδή το φως από πιο μακρινές περιοχές δεν έχει προλάβει να φτάσει σε εμάς.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-4" open>
+            <summary><span class="question-number">4.</span><span class="question-title">Πόσο χρόνο χρειάζεται περίπου το φως για να ταξιδέψει από τη Σελήνη στη Γη;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου 1,3 δευτερόλεπτα.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-5" open>
+            <summary><span class="question-number">5.</span><span class="question-title">Ποιες είναι οι τέσσερις θεμελιώδεις αλληλεπιδράσεις της φύσης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η βαρυτική, η ηλεκτρομαγνητική, η ισχυρή πυρηνική και η ασθενής πυρηνική αλληλεπίδραση.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-6" open>
+            <summary><span class="question-number">6.</span><span class="question-title">Σύμφωνα με το καθιερωμένο κοσμολογικό μοντέλο, ποιο ποσοστό της συνολικής πυκνότητας ύλης και ενέργειας του Σύμπαντος αντιστοιχεί σήμερα στη συνηθισμένη, βαρυονική ύλη;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου το 5%. Το υπόλοιπο αντιστοιχεί κυρίως στη σκοτεινή ύλη και στη σκοτεινή ενέργεια.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-7" open>
+            <summary><span class="question-number">7.</span><span class="question-title">Πόσα χρόνια μετά τη Μεγάλη Έκρηξη συνέβη η επανασύνδεση, κατά την οποία σχηματίστηκαν ουδέτερα άτομα και το Σύμπαν έγινε διαφανές στο φως;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου 380.000 χρόνια μετά τη Μεγάλη Έκρηξη.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-8" open>
+            <summary><span class="question-number">8.</span><span class="question-title">Αναφέρετε δύο είδη του φαινομένου του βαρυτικού φακού.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η ισχυρή και η ασθενής βαρυτική εστίαση.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-9" open>
+            <summary><span class="question-number">9.</span><span class="question-title">Ποια θεωρία της φυσικής εξηγεί το φαινόμενο του βαρυτικού φακού;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η γενική θεωρία της σχετικότητας του Αϊνστάιν.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-10" open>
+            <summary><span class="question-number">10.</span><span class="question-title">Αναφέρετε έναν φυσικό μηχανισμό που παράγει ακτίνες Χ.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η ακτινοβολία πέδησης: ηλεκτρόνια εκπέμπουν ακτινοβολία όταν εκτρέπονται ή επιβραδύνονται στο ηλεκτρικό πεδίο ατομικών πυρήνων.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-11" open>
+            <summary><span class="question-number">11.</span><span class="question-title">Γιατί οι αστρονομικές παρατηρήσεις στις ακτίνες Χ απαιτούν όργανα σε δορυφόρους, πυραύλους ή αερόστατα μεγάλου ύψους, αντί για τηλεσκόπια στην επιφάνεια της Γης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Επειδή η γήινη ατμόσφαιρα απορροφά τις ακτίνες Χ πριν φτάσουν στο έδαφος.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-12" open>
+            <summary><span class="question-number">12.</span><span class="question-title">Ποιο χημικό στοιχείο αποτελεί το μεγαλύτερο μέρος της μάζας της συνηθισμένης ύλης του Σύμπαντος;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Το υδρογόνο, που αντιστοιχεί περίπου στα τρία τέταρτα αυτής της μάζας.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-13" open>
+            <summary><span class="question-number">13.</span><span class="question-title">Πώς ονομάζεται ο γαλαξίας στον οποίο ανήκει το Ηλιακό μας Σύστημα;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Ο Γαλαξίας μας, γνωστός διεθνώς ως Milky Way.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-14" open>
+            <summary><span class="question-number">14.</span><span class="question-title">Ποιος είναι ο πλησιέστερος μεγάλος σπειροειδής γαλαξίας στον Γαλαξία μας;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Ο γαλαξίας της Ανδρομέδας, σε απόσταση περίπου 2,5 εκατομμυρίων ετών φωτός.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-15" open>
+            <summary><span class="question-number">15.</span><span class="question-title">Ποιο φως έχει μεγαλύτερο μήκος κύματος στο κενό: το κόκκινο ή το μπλε;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Το κόκκινο.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-16" open>
+            <summary><span class="question-number">16.</span><span class="question-title">Πόση είναι η εκτιμώμενη ηλικία της Γης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου 4,54 δισεκατομμύρια χρόνια.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-17" open>
+            <summary><span class="question-number">17.</span><span class="question-title">Πώς σχηματίστηκε η Σελήνη σύμφωνα με την επικρατέστερη επιστημονική υπόθεση;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Από υλικά που εκτινάχθηκαν σε τροχιά όταν ένα σώμα περίπου στο μέγεθος του Άρη συγκρούστηκε με την πρώιμη Γη.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-18" open>
+            <summary><span class="question-number">18.</span><span class="question-title">Από ποιες παρατηρήσεις μπορούμε να αντλήσουμε πληροφορίες για την κατάσταση του Σύμπαντος πριν από την εποχή της επανασύνδεσης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Κυρίως από τις μικρές διακυμάνσεις της κοσμικής μικροκυματικής ακτινοβολίας υποβάθρου, που διατηρούν αποτυπώματα των προηγούμενων συνθηκών.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-19" open>
+            <summary><span class="question-number">19.</span><span class="question-title">Ποιο κριτήριο του ορισμού του πλανήτη δεν πληροί ο Πλούτωνας, με αποτέλεσμα να ταξινομείται ως νάνος πλανήτης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Δεν έχει κυριαρχήσει βαρυτικά στην περιοχή της τροχιάς του, απομακρύνοντας ή ελέγχοντας τα άλλα συγκρίσιμα σώματα.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-20" open>
+            <summary><span class="question-number">20.</span><span class="question-title">Γράψτε τη σχέση που συνδέει τη σχετική μεταβολή του μήκους κύματος του φωτός, λόγω του φαινομένου Doppler, με την ακτινική ταχύτητα της πηγής ως προς τον παρατηρητή, όταν η ταχύτητα αυτή είναι πολύ μικρότερη από την ταχύτητα του φωτός.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Δλ/λ₀ ≈ υᵣ/c, όπου λ₀ το μήκος κύματος στην πηγή και υᵣ η ακτινική ταχύτητα, θετική όταν η πηγή απομακρύνεται.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-21" open>
+            <summary><span class="question-number">21.</span><span class="question-title">Πόση είναι η ταχύτητα του φωτός στο κενό;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Ακριβώς 299.792.458 m/s, δηλαδή περίπου 300.000 km/s.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-22" open>
+            <summary><span class="question-number">22.</span><span class="question-title">Πόση είναι περίπου η ταχύτητα του ήχου στον αέρα σε θερμοκρασία 20 °C;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου 343 m/s.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-23" open>
+            <summary><span class="question-number">23.</span><span class="question-title">Ποια είναι η θερμοκρασία του απόλυτου μηδενός σε βαθμούς Κελσίου και σε κέλβιν;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> −273,15 °C ή 0 K.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-24" open>
+            <summary><span class="question-number">24.</span><span class="question-title">Ποιο είδος πυρηνικών αντιδράσεων παράγει την ενέργεια που εκπέμπει ο Ήλιος;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η πυρηνική σύντηξη, κυρίως η μετατροπή υδρογόνου σε ήλιο μέσω της αλυσίδας πρωτονίου–πρωτονίου.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-25" open>
+            <summary><span class="question-number">25.</span><span class="question-title">Ποιος είναι ο μεγαλύτερος πλανήτης του Ηλιακού Συστήματος;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Ο Δίας.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-26" open>
+            <summary><span class="question-number">26.</span><span class="question-title">Ποιος είναι ο μικρότερος πλανήτης του Ηλιακού Συστήματος;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Ο Ερμής.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-27" open>
+            <summary><span class="question-number">27.</span><span class="question-title">Γιατί η επιτάχυνση της βαρύτητας στην επιφάνεια της Σελήνης είναι μικρότερη από εκείνη στην επιφάνεια της Γης;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Επειδή ο λόγος της μάζας προς το τετράγωνο της ακτίνας της είναι μικρότερος. Από τη σχέση g = GM/R² προκύπτει βαρύτητα περίπου έξι φορές μικρότερη.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-28" open>
+            <summary><span class="question-number">28.</span><span class="question-title">Τι είναι ένα διπλό αστρικό σύστημα;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Δύο αστέρες που συνδέονται βαρυτικά και περιφέρονται γύρω από το κοινό κέντρο μάζας τους.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-29" open>
+            <summary><span class="question-number">29.</span><span class="question-title">Ένα οπτικό τηλεσκόπιο και ένα ραδιοτηλεσκόπιο έχουν την ίδια διάμετρο. Αν η ανάλυσή τους περιορίζεται μόνο από την περίθλαση, ποιο έχει καλύτερη γωνιακή διακριτική ικανότητα και γιατί;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Το οπτικό, επειδή παρατηρεί σε μικρότερα μήκη κύματος. Η ελάχιστη διακρινόμενη γωνία είναι ανάλογη του λόγου λ/D.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-30" open>
+            <summary><span class="question-number">30.</span><span class="question-title">Αν παρατηρούσαμε το Ηλιακό Σύστημα από την πλευρά του βόρειου πόλου της εκλειπτικής, οι πλανήτες θα περιφέρονταν γύρω από τον Ήλιο δεξιόστροφα ή αριστερόστροφα; Υπάρχουν εξαιρέσεις ως προς την κατεύθυνση της περιφοράς τους;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Και οι οκτώ πλανήτες περιφέρονται αριστερόστροφα. Δεν υπάρχουν εξαιρέσεις ως προς την περιφορά τους γύρω από τον Ήλιο.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-31" open>
+            <summary><span class="question-number">31.</span><span class="question-title">Διατυπώστε τον πρώτο νόμο του Κέπλερ.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Οι πλανήτες περιφέρονται σε ελλειπτικές τροχιές, με τον Ήλιο στη μία εστία κάθε έλλειψης.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-32" open>
+            <summary><span class="question-number">32.</span><span class="question-title">Διατυπώστε την αρχή της απροσδιοριστίας του Χάιζενμπεργκ για τη θέση και την ορμή ενός σωματιδίου.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Οι απροσδιοριστίες της θέσης και της αντίστοιχης συνιστώσας της ορμής ικανοποιούν τη σχέση Δx·Δpₓ ≥ ℏ/2.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-33" open>
+            <summary><span class="question-number">33.</span><span class="question-title">Αναφέρετε ένα παράδειγμα εφαρμογής της αρχής της απροσδιοριστίας στην αστροφυσική.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Στην εκτίμηση της κινητικής ενέργειας των ηλεκτρονίων στους λευκούς νάνους· μαζί με την απαγορευτική αρχή του Πάουλι, βοηθά στην κατανόηση της πίεσης εκφυλισμού.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-34" open>
+            <summary><span class="question-number">34.</span><span class="question-title">Ένας αστέρας έχει επιφανειακή θερμοκρασία 10.000 K. Θεωρώντας ότι ακτινοβολεί ως μέλαν σώμα, υπολογίστε το μήκος κύματος στο οποίο η εκπεμπόμενη ισχύς ανά μονάδα μήκους κύματος είναι μέγιστη.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Από τον νόμο του Wien, λmax = 2,898 × 10⁻³/T ≈ 290 nm, στην υπεριώδη περιοχή.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-35" open>
+            <summary><span class="question-number">35.</span><span class="question-title">Μέσω ποιων θεμελιωδών αλληλεπιδράσεων αλληλεπιδρούν τα νετρίνα;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Μέσω της ασθενούς πυρηνικής αλληλεπίδρασης και της βαρύτητας.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-36" open>
+            <summary><span class="question-number">36.</span><span class="question-title">Ποια είναι η διαφορά ανάμεσα στην ψυχρή και τη θερμή σκοτεινή ύλη, ως προς τις ταχύτητες των σωματιδίων τους στο πρώιμο Σύμπαν και την επίδρασή τους στον σχηματισμό κοσμικών δομών;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Τα σωματίδια της ψυχρής σκοτεινής ύλης κινούνταν σχετικά αργά όταν άρχισαν να σχηματίζονται δομές. Της θερμής κινούνταν πολύ γρηγορότερα, εξομαλύνοντας τις μικρές συγκεντρώσεις ύλης και δυσκολεύοντας τον σχηματισμό μικρών δομών.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-37" open>
+            <summary><span class="question-number">37.</span><span class="question-title">Τι πληροφορίες μάς δίνουν οι σκοτεινές γραμμές απορρόφησης στο φάσμα ενός αστέρα και γιατί εμφανίζονται σκοτεινές;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Αποκαλύπτουν τη χημική σύσταση και πληροφορίες για τη θερμοκρασία και την κίνηση του αστέρα. Είναι σκοτεινές επειδή το αέριο της ατμόσφαιράς του απορροφά επιλεκτικά φως σε συγκεκριμένα μήκη κύματος.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-38" open>
+            <summary><span class="question-number">38.</span><span class="question-title">Κατά τη συνολική διαδικασία σύντηξης υδρογόνου σε ήλιο στον Ήλιο, περίπου το 0,7% της αρχικής μάζας μετατρέπεται σε ενέργεια. Ποια σχέση συνδέει τη μείωση της μάζας με την ενέργεια που απελευθερώνεται;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η σχέση E = Δm·c², όπου Δm η μείωση της μάζας και c η ταχύτητα του φωτός στο κενό.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-39" open>
+            <summary><span class="question-number">39.</span><span class="question-title">Γιατί στη Σελήνη διατηρούνται πολύ περισσότεροι ορατοί κρατήρες πρόσκρουσης από ό,τι στη Γη;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Επειδή στη Σελήνη απουσιάζουν σχεδόν εντελώς η ατμοσφαιρική διάβρωση, το τρεχούμενο νερό και η ενεργή τεκτονική πλακών που σβήνουν πολλούς γήινους κρατήρες.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-40" open>
+            <summary><span class="question-number">40.</span><span class="question-title">Ποια φυσικά μεγέθη παριστάνονται στους δύο άξονες ενός διαγράμματος Hertzsprung–Russell;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Συνήθως η επιφανειακή θερμοκρασία στον οριζόντιο άξονα και η φωτεινότητα στον κατακόρυφο. Η θερμοκρασία μειώνεται προς τα δεξιά.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-41" open>
+            <summary><span class="question-number">41.</span><span class="question-title">Ποια είναι η διαφορά ανάμεσα στη φωτεινότητα ενός αστέρα και στη φαινόμενη λαμπρότητά του;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η φωτεινότητα είναι η συνολική ενέργεια που εκπέμπει ανά δευτερόλεπτο. Η φαινόμενη λαμπρότητα είναι η ενέργεια που λαμβάνουμε ανά δευτερόλεπτο και ανά μονάδα επιφάνειας και εξαρτάται και από την απόστασή του.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-42" open>
+            <summary><span class="question-number">42.</span><span class="question-title">Γιατί οι μεταβλητοί αστέρες Κηφείδες μπορούν να χρησιμοποιηθούν για τη μέτρηση αστρονομικών αποστάσεων;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Επειδή η περίοδος των παλμών τους συνδέεται με τη φωτεινότητά τους. Συγκρίνοντας αυτή τη φωτεινότητα με τη φαινόμενη λαμπρότητα, υπολογίζουμε την απόστασή τους.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-43" open>
+            <summary><span class="question-number">43.</span><span class="question-title">Πώς σχηματίζεται ένας αστέρας νετρονίων;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Συνήθως από την κατάρρευση του πυρήνα ενός αστέρα μεγάλης μάζας κατά την έκρηξη υπερκαινοφανούς, όταν το υπόλειμμα δεν είναι αρκετά βαρύ ώστε να γίνει μαύρη τρύπα.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-44" open>
+            <summary><span class="question-number">44.</span><span class="question-title">Ποιο είναι περίπου το ανώτατο όριο της αρχικής μάζας ενός αστέρα που μπορεί να καταλήξει σε λευκό νάνο;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Περίπου οκτώ ηλιακές μάζες, με το ακριβές όριο να εξαρτάται από τη σύσταση και την εξέλιξη του αστέρα.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-45" open>
+            <summary><span class="question-number">45.</span><span class="question-title">Ποια διάμετρο πρέπει να έχει ένα ραδιοτηλεσκόπιο που παρατηρεί σε μήκος κύματος 1 cm, ώστε να έχει την ίδια γωνιακή διακριτική ικανότητα με ένα οπτικό τηλεσκόπιο διαμέτρου 10 cm που παρατηρεί σε μήκος κύματος 500 nm; Θεωρήστε ότι και τα δύο τηλεσκόπια περιορίζονται μόνο από την περίθλαση.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Από την ισότητα λᵣ/Dᵣ = λₒ/Dₒ προκύπτει Dᵣ = 2.000 m, δηλαδή διάμετρος 2 km.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-46" open>
+            <summary><span class="question-number">46.</span><span class="question-title">Τι τάξης μεγέθους θερμοκρασία απαιτείται στον πυρήνα ενός αστέρα για να πραγματοποιείται σύντηξη ηλίου και να παράγονται άνθρακας και οξυγόνο;</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Θερμοκρασία της τάξης των 100 εκατομμυρίων κέλβιν, δηλαδή περίπου 10⁸ K.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-47" open>
+            <summary><span class="question-number">47.</span><span class="question-title">Γράψτε τον νόμο Stefan–Boltzmann για τη συνολική ισχύ που εκπέμπει ένα μέλαν σώμα ανά μονάδα επιφάνειας.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> P/A = σT⁴, όπου T η απόλυτη θερμοκρασία και σ ≈ 5,67 × 10⁻⁸ W·m⁻²·K⁻⁴.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-48" open>
+            <summary><span class="question-number">48.</span><span class="question-title">Αναφέρετε μία θεωρητική προσέγγιση που επιχειρεί να εξηγήσει τις καμπύλες περιστροφής των γαλαξιών τροποποιώντας τους νόμους της δυναμικής ή της βαρύτητας, αντί να υποθέτει την παρουσία σκοτεινής ύλης.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η MOND, δηλαδή η Τροποποιημένη Νευτώνεια Δυναμική, που προτείνει αλλαγές στη δυναμική σε πολύ μικρές επιταχύνσεις.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-49" open>
+            <summary><span class="question-number">49.</span><span class="question-title">Αναφέρετε ένα ραδιοτηλεσκόπιο ή μία συστοιχία ραδιοτηλεσκοπίων.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Η συστοιχία ALMA, στη Χιλή.</p></div>
+          </details>
+        </li>
+        <li>
+          <details class="question-card" id="question-50" open>
+            <summary><span class="question-number">50.</span><span class="question-title">Αναφέρετε ένα σχεδιαζόμενο ή υπό κατασκευή τηλεσκόπιο.</span></summary>
+            <div class="question-answer"><p><strong>Απάντηση:</strong> Το Extremely Large Telescope (ELT) του Ευρωπαϊκού Νότιου Αστεροσκοπείου, που κατασκευάζεται στη Χιλή.</p></div>
+          </details>
+        </li>
+      </ol>
+      <div class="return-link"><a class="text-link" href="index.html#olympiad-2013">← Επιστροφή στην προσωπική σελίδα</a></div>
+    </div>
+  </section>
+</main>
+<footer class="exam-footer"><div class="reading-shell"><a href="index.html">Γιώργος Χριστοδουλίδης</a> · Φυσική, Αστρονομία και Εκπαίδευση</div></footer>
+<script>
+(() => {
+  const questions = Array.from(document.querySelectorAll('#questions details'));
+  document.getElementById('hide-answers').addEventListener('click', () => {
+    questions.forEach(question => { question.open = false; });
+  });
+  document.getElementById('show-answers').addEventListener('click', () => {
+    questions.forEach(question => { question.open = true; });
+  });
+  document.getElementById('answer-controls').hidden = false;
+  let beforePrint;
+  window.addEventListener('beforeprint', () => {
+    beforePrint = questions.map(question => question.open);
+    questions.forEach(question => { question.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (beforePrint) questions.forEach((question, i) => { question.open = beforePrint[i]; });
+  });
+})();
+</script>
+</body>
+</html>
