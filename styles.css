@@ -285,3 +285,89 @@ h3 { font-size: 1.55rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* Larger social links. Icons adapted from Bootstrap Icons (MIT license).
+   Scoped to the footer; the existing text remains each link's accessible name. */
+.site-footer .footer-label {
+  margin-bottom: 20px;
+  color: #b0c1d4;
+  font-size: 0.875rem;
+  letter-spacing: 0.13em;
+}
+.site-footer .social-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 36rem;
+}
+.site-footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  min-width: 0;
+  min-height: 64px;
+  padding: 14px;
+  border: 1px solid #38516b;
+  border-radius: 12px;
+  background: #102338;
+  color: #f5f8fc;
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+.site-footer .social-links a::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.site-footer .social-links a:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+.site-footer .social-links a:hover {
+  background: #1b354f;
+  border-color: #7eb7ff;
+  color: #ffffff;
+}
+.site-footer .social-links a:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 4px;
+  background: #1b354f;
+  color: #ffffff;
+}
+.site-footer .social-links a[href*="linkedin.com"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%221%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill%3D%22%230A66C2%22%20d%3D%22M0%201.146C0%20.513.526%200%201.175%200h13.65C15.474%200%2016%20.513%2016%201.146v13.708c0%20.633-.526%201.146-1.175%201.146H1.175C.526%2016%200%2015.487%200%2014.854zm4.943%2012.248V6.169H2.542v7.225zm-1.2-8.212c.837%200%201.358-.554%201.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4%203.226%202.4%203.934c0%20.694.521%201.248%201.327%201.248zm4.908%208.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878%201.232-.878.869%200%201.216.662%201.216%201.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274%200-1.845.7-2.165%201.193v.025h-.016l.016-.025V6.169h-2.4c.03.678%200%207.225%200%207.225z%22%2F%3E%3C%2Fsvg%3E");
+}
+.site-footer .social-links a[href*="instagram.com"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cdefs%3E%3CradialGradient%20id%3D%22g%22%20cx%3D%2215%25%22%20cy%3D%22100%25%22%20r%3D%22130%25%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23FFD776%22%2F%3E%3Cstop%20offset%3D%22.3%22%20stop-color%3D%22%23F56040%22%2F%3E%3Cstop%20offset%3D%22.6%22%20stop-color%3D%22%23C13584%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235851DB%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22url%28%23g%29%22%2F%3E%3Cpath%20fill%3D%22white%22%20transform%3D%22translate%284%204%29%22%20d%3D%22M8%200C5.829%200%205.556.01%204.703.048%203.85.088%203.269.222%202.76.42a3.9%203.9%200%200%200-1.417.923A3.9%203.9%200%200%200%20.42%202.76C.222%203.268.087%203.85.048%204.7.01%205.555%200%205.827%200%208.001c0%202.172.01%202.444.048%203.297.04.852.174%201.433.372%201.942.205.526.478.972.923%201.417.444.445.89.719%201.416.923.51.198%201.09.333%201.942.372C5.555%2015.99%205.827%2016%208%2016s2.444-.01%203.298-.048c.851-.04%201.434-.174%201.943-.372a3.9%203.9%200%200%200%201.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99%2010.445%2016%2010.173%2016%208s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9%203.9%200%200%200-.923-1.417A3.9%203.9%200%200%200%2013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01%2010.172%200%207.998%200zm-.717%201.442h.718c2.136%200%202.389.007%203.232.046.78.035%201.204.166%201.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275%201.485.039.843.047%201.096.047%203.231s-.008%202.389-.047%203.232c-.035.78-.166%201.203-.275%201.485a2.5%202.5%200%200%201-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5%202.5%200%200%201-.92-.598%202.5%202.5%200%200%201-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24%201.485-.276.738-.034%201.024-.044%202.515-.045zm4.988%201.328a.96.96%200%201%200%200%201.92.96.96%200%200%200%200-1.92m-4.27%201.122a4.109%204.109%200%201%200%200%208.217%204.109%204.109%200%200%200%200-8.217m0%201.441a2.667%202.667%200%201%201%200%205.334%202.667%202.667%200%200%201%200-5.334%22%2F%3E%3C%2Fsvg%3E");
+}
+.site-footer .social-links a[href*="facebook.com"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227.7%22%20fill%3D%22white%22%2F%3E%3Cpath%20fill%3D%22%231877F2%22%20d%3D%22M16%208.049c0-4.446-3.582-8.05-8-8.05C3.58%200-.002%203.603-.002%208.05c0%204.017%202.926%207.347%206.75%207.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017%201.195-3.131%203.022-3.131.876%200%201.791.157%201.791.157v1.98h-1.009c-.993%200-1.303.621-1.303%201.258v1.51h2.218l-.354%202.326H9.25V16c3.824-.604%206.75-3.934%206.75-7.951%22%2F%3E%3C%2Fsvg%3E");
+}
+.site-footer .social-links a[href*="tiktok.com"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%226%22%20fill%3D%22%23050505%22%2F%3E%3Cg%20transform%3D%22translate%284%204%29%22%3E%3Cpath%20fill%3D%22%2325F4EE%22%20transform%3D%22translate%28-.65%20-.4%29%22%20d%3D%22M9%200h1.98c.144.715.54%201.617%201.235%202.512C12.895%203.389%2013.797%204%2015%204v2c-1.753%200-3.07-.814-4-1.829V11a5%205%200%201%201-5-5v2a3%203%200%201%200%203%203z%22%2F%3E%3Cpath%20fill%3D%22%23FE2C55%22%20transform%3D%22translate%28.65%20.4%29%22%20d%3D%22M9%200h1.98c.144.715.54%201.617%201.235%202.512C12.895%203.389%2013.797%204%2015%204v2c-1.753%200-3.07-.814-4-1.829V11a5%205%200%201%201-5-5v2a3%203%200%201%200%203%203z%22%2F%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M9%200h1.98c.144.715.54%201.617%201.235%202.512C12.895%203.389%2013.797%204%2015%204v2c-1.753%200-3.07-.814-4-1.829V11a5%205%200%201%201-5-5v2a3%203%200%201%200%203%203z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.site-footer .social-links a[href*="youtube.com"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%23FF0033%22%20d%3D%22M8%203c5.5%200%206.2.2%206.9.9.7.7.7%202.1.7%204.1s0%203.4-.7%204.1c-.7.7-1.4.9-6.9.9s-6.2-.2-6.9-.9C.4%2011.4.4%2010%20.4%208s0-3.4.7-4.1C1.8%203.2%202.5%203%208%203Z%22%2F%3E%3Cpath%20fill%3D%22white%22%20d%3D%22m6.5%205.5%204.2%202.5-4.2%202.5Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+@media (min-width: 360px) and (max-width: 400px) {
+  .site-footer .social-links a { gap: 10px; padding: 12px; }
+  .site-footer .social-links a::before { width: 28px; height: 28px; flex-basis: 28px; }
+}
+@media (max-width: 359px) {
+  .site-footer .social-links { grid-template-columns: minmax(0, 1fr); }
+}
+@media (forced-colors: active) {
+  .site-footer .social-links a { border-color: LinkText; color: LinkText; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-footer .social-links a { transition: none; }
+}
